@@ -1,0 +1,43 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: inline-flex;
+	position: relative;
+	z-index: 20;
+	padding: 15px 20px;
+	background-color: $mainColor;
+	font-weight: 700;
+	overflow: hidden;
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background-color: #1b1b1b;
+		transition: left 0.3s ease 0s;
+	}
+	span {
+		position: relative;
+		z-index: 1;
+		color: $mainBlack;
+		transition: color 0.2s ease 0s;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			span {
+				color: $mainColor;
+			}
+			&::before {
+				left: 0;
+			}
+		}
+	}
+	&._fw {
+		// width: 100%;
+	}
+}

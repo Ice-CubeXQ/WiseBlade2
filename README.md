@@ -1,1 +1,0 @@
-<h1 style="text-align: center;"><a href="#" style="color: #e71b77;">WiseBlade</a></h1>

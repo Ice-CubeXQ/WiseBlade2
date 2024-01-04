@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.htm',{
+    "title":"Регистрация"
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.htm',{})
+            <main data-fullscreen class="login-page">
+                <form action class="login-page__form form">
+                    <h2 class="form__title">Registration</h2>
+                    <div class="form__input-box">
+                        <input autocomplete="off" type="text" name="form[name]"
+                            placeholder="Username" class="input form__input">
+                    </div>
+                    <div class="form__input-box">
+                        <input autocomplete="off" type="email" name="form[name]"
+                            placeholder="Email" class="input form__input">
+                    </div>
+                    <div class="form__input-box">
+                        <input autocomplete="off" type="password"
+                            name="form[pass]"
+                            placeholder="Password" class="input form__input">
+                    </div>
+                    <div class="form__remember-forgot">
+                        <div class="checkbox">
+                            <input id="c_1" data-error="Ошибка"
+                                class="checkbox__input" type="checkbox"
+                                value="1" name="form[remember]">
+                            <label for="c_1" class="checkbox__label"><span
+                                    class="checkbox__text">Remember me</span></label>
+                        </div>
+
+                    </div>
+                    <button type="submit" class="form__button">Registration</button>
+                </form>
+
+            </main>
+            @@include('html/_footer.htm',{})
+        </div>
+        @@include('html/_popup.htm',{})
+        @@include('html/_js.htm',{})
+    </body>
+</html>
