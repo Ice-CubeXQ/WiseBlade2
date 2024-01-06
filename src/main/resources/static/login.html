@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Вход</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240104160210">
+	<link rel="shortcut icon" href="favicon.ico">
+	Content
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__column header__column_logo">
+					<a href="home.html" class="header__logo">WiseBlade</a>
+				</div>
+				<div class="header__column header__column_buttons">
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Поддержка</a></li>
+								<li class="menu__item"><a href="login.html" class="menu__link">Авторизация</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main data-fullscreen class="login-page">
+			<form action="/login" class="login-page__form form" method="post">
+				<h2 class="form__title">Login</h2>
+				<div class="form__input-box">
+					<input autocomplete="off" type="text" name="email" placeholder="Email" class="input form__input">
+				</div>
+				<div class="form__input-box">
+					<input autocomplete="off" type="password" name="password" placeholder="Password" class="input form__input">
+				</div>
+				<div class="form__remember-forgot">
+					<div class="checkbox">
+						<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[remember]">
+						<label for="c_1" class="checkbox__label"><span class="checkbox__text">Remember me</span></label>
+					</div>
+					<a href="#" class="form__link">Forgot Password?</a>
+				</div>
+				<button type="submit" class="form__button">Login</button>
+				<div class="form__registration-link">
+					<span>Don't have an account? </span>
+					<a href="/registration.html">Register</a>
+				</div>
+			</form>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20240104160210"></script>
+</body>
+
+</html>
