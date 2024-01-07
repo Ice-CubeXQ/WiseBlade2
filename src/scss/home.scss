@@ -1,6 +1,7 @@
 //====================================================================================================
 .main-page {
     background: url("@img/Backgr.jpeg") center / cover no-repeat;
+    height: rem(490);
     @media (max-width: $mobile) {
         background-position: rem(-70) 0;
     }

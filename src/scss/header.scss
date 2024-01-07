@@ -61,7 +61,7 @@
 			right: -100%;
 			transition: right 0.3s ease 0s;
 			background-color: #121212;
-			@include adaptiveValue("padding-top", 151, 100);
+			@include adaptiveValue("padding-top", 171, 120);
 			padding-bottom: rem(30);
 			padding-right: rem(15);
 			padding-left: rem(15);
@@ -81,7 +81,7 @@
 		@media (max-width: $mobile) {
 			flex-direction: column;
 			align-items: center;
-			align-self: center;
+			align-self: flex-start;
 			row-gap: rem(50);
 		}
 	}
@@ -130,8 +130,6 @@
 		padding: 15px 10px;
 		@media (max-width: $mobile) {
 			font-size: rem(40);
-			letter-spacing: em(5, 40);
-			font-weight: 500;
 		}
 	}
 }

@@ -37,7 +37,7 @@ flsFunctions.addLoadedClass();
 /* Модуль для работы с меню (Бургер) */
 flsFunctions.menuInit();
 /* Учет плавающей панели на мобильных устройствах при 100vh */
-flsFunctions.fullVHfix();
+// flsFunctions.fullVHfix();
 
 /*
 Модуль работы со спойлерами
